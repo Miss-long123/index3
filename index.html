@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+        }
+        
+        #top{
+            background-color: #e6c971;
+            width:auto;
+            color:rgba(255, 255, 255, 0.959);
+            display: flex;
+            line-height: 60px;
+            justify-content: space-between;
+            padding:0 100px;
+        }
+           
+        #top ul{
+            display: flex;
+            list-style-type: none;
+
+        }
+        
+        #top ul li{
+            margin-right: 10px;
+            color:#a29c9cf0;
+
+        }
+        #main{
+            background-color: #e6c971;
+            display: flex;
+            padding:0 100px;
+        }
+        #main-left{
+            width:65%;
+            margin: 200px 0px;
+         
+        }
+        #main-left span{
+            color: #8aad4d;
+        }
+        #main-left p{
+            margin:20px 0px;
+        }
+        #main-left button{
+            background-color: rgb(21, 199, 116);
+            color: azure;
+            padding: 10px 20px ;
+            border-radius: 10px;
+        }
+
+        #main-right{
+            width:40%;
+        }
+        #main-right img{
+            width:100%;
+        }
+
+        #three{
+            padding:0 100px;
+            display: flex;
+            margin-top: 50px;
+        }
+        #three div{
+            padding:0px 30px;
+            text-align: center;
+        }
+        #fruit img,#box img,#guicai img{
+            width:100px;
+            height: auto;
+
+        }
+        #left{
+            background-color: #bbbd7b;
+            margin-right: 50px;
+        }
+        #mid{
+            background-color: #4dada2;
+            margin-right: 50px;
+        }
+        #right{
+            background-color: #f4bdbd;
+            margin-right: 50px;
+
+        }
+        #left a,#right a{
+            background-color: rgb(21, 199, 116);
+            text-decoration: none;
+            color:rgb(239, 239, 239);
+            display:inline-block;
+            padding:10px 20px;
+            margin-top:20px;
+        }
+        #mid a{
+            background-color: #547474;
+            text-decoration: none;
+            color:rgb(239, 239, 239);
+            display:inline-block;
+            padding:10px 20px;
+            margin-top:20px;
+
+        }
+
+
+
+
+        @media(max-width:720px){
+
+            #main{
+                flex-direction: column;
+            }
+
+            #main-right img{
+            margin-left: 100px;
+            width:120%;
+            }
+            #top{
+                flex-direction: column;
+            }
+
+            #top ul{
+                margin-left: 100px;
+                margin-right: 0;
+                flex-direction: column;
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h2>响应式页面布局</h2>
+        <ul>
+            <li>简介</li>
+            <li>主页</li>
+            <li>目标</li>
+            <li>概述</li>
+        </ul>
+
+    </div>
+    <div id="main">
+        <div id="main-left">
+         <h2>点亮智慧 <span>闪耀星光！</span></h2>  
+            <p>
+                介绍：关东组是一支充满活力与智慧的团队，由一群热爱探索、勇于创新的成员组成。我们致力于追求知识的深度和广度，通过不断学习和交流，不断提升自己的能力和水平。我们坚信，智慧是开启未来的钥匙，星光是照亮前行的灯塔。在关东组的大家庭中，我们携手共进，共同创造更加美好的未来！
+            </p>
+            <button>
+                关东组
+            </button>
+
+        </div>
+        <div id="main-right">
+            <img src="./pen-svgrepo-com.svg" alt="">
+        </div>
+        
+
+    </div><!--end of main-->
+
+    <div id="three">
+        <div id="left">
+            <div id="fruit">
+                <img src="./calculator-svgrepo-com.svg" alt="">
+            
+            </div>
+            <h2>贵财网页</h2>  
+            <p>该网页界面布局合理，含搜索框和常用链接，内容展示清晰，交互元素友好。技术采用HTML构建，CSS样式，性能优化佳，加载速度快，图片资源小，使用缓存技术。整体提供高效、便捷且愉悦的浏览体验，兼容性和可访问性强。</p>
+            <a href="https://miss-long123.github.io/guicai-/guicai.html">贵财网页</a>
+        </div>
+        <div id="mid">
+            <div id="box">
+                <img src="./office-chair-svgrepo-com.svg" alt="">
+
+            </div>
+            <h2>list网页</h2>
+            <p>提供简单易用的在线清单工具，帮助您高效管理日常任务。创建、编辑、共享清单，设置提醒和优先级，让生活井然有序。无论您是学生、职场人士还是家庭主妇，都能在这里找到适合自己的清单计划方案。</p>
+            <a href="https://miss-long123.github.io/llist2/list.html">list网页</a>
+            
+        </div>
+        <div id="right">
+            <div id="guicai">
+                <img src="./scissors-svgrepo-com.svg" alt="">
+
+            </div>
+
+            <h2>计算器网页</h2>
+            <p>这个简洁易用的网页工具可以帮助您快速进行各种数学运算，包括加法、减法、乘法、除法以及更复杂的函数。无论您是在学习、工作还是日常生活中需要计算，都能轻松应对。立即访问，体验便捷高效的计算服务！</p>
+            <a href="https://miss-long123.github.io/calculator/calculator.html">计算器网页</a>
+            
+        </div>
+
+
+    </div>
+</body>
+</html>
+</head>
+<body>
+    
+</body>
+</html>
